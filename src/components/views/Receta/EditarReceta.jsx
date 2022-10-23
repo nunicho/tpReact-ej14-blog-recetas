@@ -96,11 +96,11 @@ return (
           required:'Debe seleccionar una dificultad'
         })}>
            <option value="">Seleccione una opcion</option>
-            <option value="una-estrella">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
-            <option value="dos-estrella">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
-            <option value="tres-estrella">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
-            <option value="cuatro-estrella">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
-            <option value="cinco-estrella">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            <option value="&#9733;&#9734;&#9734;&#9734;&#9734;">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9734;&#9734;&#9734;">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9734;&#9734;">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9734;">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
         </Form.Select>
          <Form.Text className="text-danger">{errors.dificultad?.message}</Form.Text>
       </Form.Group>

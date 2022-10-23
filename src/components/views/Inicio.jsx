@@ -17,7 +17,8 @@ setRecetas(respuesta)
 
     return (
         <div>
-            <h1 className="my-5 text-center">SABORES CORDOBESES</h1>
+            <h1 className="my-3 text-center">DELICIAS CORDOBESAS</h1>
+            <h3 className="my-2 text-center">¡Recetas con mucho saaaaabor!</h3>
             <hr></hr>
             <div className="row">
             {
