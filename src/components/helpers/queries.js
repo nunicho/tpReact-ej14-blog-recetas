@@ -55,11 +55,27 @@ export const obtenerRecetaAPI = async(id) =>{
     try{
 
         const respuesta = await fetch (URL+'/'+id);
-        const recetaBuscada = await respuesta.json();
-        // console.log(listaProductos)
+        const recetaBuscada = { 
+            dato: await respuesta.json(),                  
+            status: respuesta.status
+        }
         return recetaBuscada
     }catch(error){
         console.log(error)
     }
 }
 
+export const editarRecetaAPI = async(id, datosActualizados)=>{
+    try{
+        const respuesta = await fetch(URL+'/'+id,{
+            method: "PUT",
+            headers:{
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(datosActualizados)
+        });
+        return respuesta;
+    }catch(error){
+        console.log(error);
+    }
+}

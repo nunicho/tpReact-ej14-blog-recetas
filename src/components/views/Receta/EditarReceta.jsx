@@ -1,40 +1,61 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { useEffect } from "react";
+import {Form, Button} from 'react-bootstrap';
+import { useParams, useNavigate } from "react-router-dom";
+import { editarRecetaAPI, obtenerRecetaAPI } from "../../helpers/queries";
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-import { creaRecetaAPI } from "../../helpers/queries";
-import { useNavigate} from "react-router-dom"
+
 
 const EditarReceta = () => {
-
-const {register, handleSubmit, formState:{errors}, reset} = useForm( 
-  {defaultValues: {
+const {id} = useParams();
+const {
+   register,
+   handleSubmit,
+   formState:{errors},
+   setValue} = useForm({
+    defaultValues: {
     nombreReceta: "",
     dificultad: "",
     ingredientes:"",
     categoria: "",
     pasos: "",
     imagen:"",
-  }});
+  },
+  });
 
-// inicializar la navegación
 const navegacion = useNavigate();
 
-const onSubmit = (datos) =>{
+  useEffect(()=>{
+    obtenerRecetaAPI(id).then((respuesta)=>{
+      if(respuesta.status===200){
+        //cargar los datos de la repuesta en el formulario
+        setValue('nombreReceta', respuesta.dato.nombreReceta)
+        setValue('dificultad', respuesta.dato.dificultad)
+        setValue('ingredientes', respuesta.dato.ingredientes)
+        setValue('categoria', respuesta.dato.categoria)
+        setValue('pasos', respuesta.dato.pasos)
+        setValue('imagen', respuesta.dato.imagen )
+        console.log(respuesta)
+      }else{
+        Swal.fire('Ocurrio un error', 'Intente este paso en unos minutos', 'error')
+      }
+    })
+  },[])
+
+
+const onSubmit = (producto) =>{
   // los datos ya están validados
-  console.log(datos)
+  console.log(producto)
   // enviar los datos a la api
-  creaRecetaAPI(datos).then((respuesta)=>{
-    if(respuesta.status === 201){
+  editarRecetaAPI(id,producto).then((respuesta)=>{
+    if(respuesta.status===200){
       // el producto se creó
-      Swal.fire('Receta creada', 'La receta fue creada correctamente', 'success')
-      reset();
+      Swal.fire('Receta actualizada', 'La receta fue actualizada correctamente', 'success')
       navegacion ('/administrador');
     }else{
       //mostrar 
-      Swal.fire('Receta no creada', 'Vuelva a intentar nuevamente', 'error')
+      Swal.fire('Ocurrió un error', 'Vuelva a intentar nuevamente', 'error')
     }
     
   })

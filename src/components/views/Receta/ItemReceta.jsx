@@ -53,7 +53,7 @@ Swal.fire({
           <td>{receta.pasos}</td>
           <td>{receta.imagen}</td>
           <td>
-            <Link className="btn btn-warning" to={`./administrar/editar/${receta.id}`}>Editar</Link>
+            <Link className="btn btn-warning" to={`/administrar/editar/${receta.id}`}>Editar</Link>
             <Button variant="danger" onClick={borrarReceta}>Borrar</Button>
           </td>
         </tr>
