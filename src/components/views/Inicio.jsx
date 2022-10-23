@@ -17,7 +17,7 @@ setRecetas(respuesta)
 
     return (
         <div>
-            <h1 className="my-5 text-center">RECETAS DEL TIO BABY</h1>
+            <h1 className="my-5 text-center">SABORES CORDOBESES</h1>
             <hr></hr>
             <div className="row">
             {
