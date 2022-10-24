@@ -6,12 +6,14 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import { creaRecetaAPI } from "../../helpers/queries";
 import { useNavigate} from "react-router-dom"
+import { LionTextarea } from '@lion/textarea';
 
 const CrearReceta = () => {
 
 const {register, handleSubmit, formState:{errors}, reset} = useForm( 
   {defaultValues: {
     nombreReceta: "",
+    resumen:"",
     dificultad: "",
     ingredientes:"",
     categoria: "",
@@ -68,6 +70,28 @@ return (
        <Form.Text className="text-danger">{errors.nombreReceta?.message}</Form.Text>
        </Form.Group>
        
+       <Form.Group className="mb-3" controlId="nuevoNombreReceta">
+        <Form.Label>Resumen</Form.Label>
+        <Form.Control 
+        type="text" 
+        as="textarea"
+        rows={5}
+        placeholder="Salpimentar, cortar en juliana..."
+        {...register('resumen', {
+          required:'Este dato es obligatorio', 
+          minLength: {
+            value: 2,
+            message: 'Debe ingresar como mínimo 2 caracteres'
+          },
+          maxLength:{
+            value: 500,
+            message: 'Debe ingresar como máximo 20000 caracteres'
+          }
+       })} />
+       <Form.Text className="text-danger">{errors.resumen?.message}</Form.Text>
+       </Form.Group> 
+
+
       <Form.Group className="mb-3">
         <Form.Label>Dificultad</Form.Label>
         <Form.Select 
@@ -98,8 +122,8 @@ return (
             message: 'Debe ingresar como mínimo 2 caracteres'
           },
           maxLength:{
-            value: 1000,
-            message: 'Debe ingresar como máximo 200 caracteres'
+            value: 10000,
+            message: 'Debe ingresar como máximo 1000 caracteres'
           }
        })} />
        <Form.Text className="text-danger">{errors.ingredientes?.message}</Form.Text>
@@ -135,8 +159,8 @@ return (
             message: 'Debe ingresar como mínimo 2 caracteres'
           },
           maxLength:{
-            value: 2000,
-            message: 'Debe ingresar como máximo 2000 caracteres'
+            value: 20000,
+            message: 'Debe ingresar como máximo 20000 caracteres'
           }
        })} />
        <Form.Text className="text-danger">{errors.pasos?.message}</Form.Text>

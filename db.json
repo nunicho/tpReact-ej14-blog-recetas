@@ -1,13 +1,34 @@
 {
   "recetas": [
     {
-      "nombreReceta": "Sandwich de huevo",
-      "dificultad": "★★☆☆☆",
-      "ingredientes": "Huevo, jamón, queso, pan lactal, aderezos",
-      "categoria": "desayuno",
-      "pasos": "hacer un omelette. Preparar el sandwich",
-      "imagen": "http://assets.kraftfoods.com/recipe_images/opendeploy/111629_640x428.jpg",
-      "id": 4
+      "nombreReceta": "Fernet con coca cordobés",
+      "resumen": "Un clásico argentino y que cuenta con una de los nombres de comidas típicas de Córdoba que mejor identifican su tierra, es el fernet con coca. Una bebida que disfrutan propios y extraños, sin dudar.",
+      "dificultad": "★☆☆☆☆",
+      "ingredientes": "• Fernet branca\n• Hielo\n• Coca cola",
+      "categoria": "aperitivo",
+      "pasos": "Preparación:\n\n1- En un vaso colocamos una parte de coca cola.\n2- Añadimos lentamente 2 partes de fernet\n3- Agregamos hielo.\n4- Revolvemos y en tan solo un momento, obtenemos una deliciosa y refrescante bebida.",
+      "imagen": "https://picaro.news/wp-content/uploads/2021/09/ferneee-620x430.jpg",
+      "id": 5
+    },
+    {
+      "nombreReceta": "Empanadas cordobesas",
+      "resumen": "Uno de los más deliciosos platos típicos de Córdoba que encuentras en cualquier lugar y de gran variedad son las empanadas cordobesas, hechas de carne molida, pimentón y una masa que te va a encantar.",
+      "dificultad": "★★★★☆",
+      "ingredientes": "Para la masa:\n• 400 gramos de harina 0000\n• 100 cc de salmuera\n• 50 gramos de grasa de cerdo\n• 1 cucharadita de pimentón\nPara el relleno:\n• 200 gramos de carne molida\n• 200 gramos de cebolla\n• 150 gramos de papas\n• 100 gramos de morrón rojo\n• 2 huevos\n• 20 gramos de aceitunas verdes\n• 30 gramos de pasas de uva\n• 2 cucharadas de azúcar\n• Ají molido\n• Sal",
+      "categoria": "plato-principal",
+      "pasos": "1 - Colocamos en un bol la harina, la grasa fundida y la salmuera. Amasamos hasta integrar todos los ingredientes, dejamos descansar la masa por 30 minutos y estiramos hasta obtener un espesor de 2 mm, cortamos en aros.\n2 - Salteamos el morrón con la cebolla y agregamos la carne y los condimentos. Cocinamos y añadimos finalmente las aceitunas, las pasas de uva y el azúcar. Reservamos el relleno.\n3 - Aparte colocamos en una olla agua y ponemos a hervir, incorporamos por 7 minutos las papas picaditas y las dejamos ablandar.\n4 - Añadimos a la mezcla de carne las papas y los huevos duros picados finamente.\n5 - Tomamos los aros de masa y rellenamos, llevamos las empanadas al horno hasta que se doren.",
+      "imagen": "https://cocinerosargentinos.com/content/recipes/500x500/recipes.11938.jpeg",
+      "id": 6
+    },
+    {
+      "nombreReceta": "Alfajores cordobeses",
+      "resumen": "Recetas de platos típicos de Córdoba existe gran variedad, pero los alfajores son de esas preparaciones más emblemáticas, deliciosas y que son un gran orgullo de nuestra gastronomía.",
+      "dificultad": "★★★★☆",
+      "ingredientes": "• 300 gramos de harina\n• 2 yemas de huevo\n• 1 cucharadita de levadura en polvo\n• 150 gramos de margarina\n• 1 taza de azúcar glass\n• 1 cucharada de azúcar\n• Dulce de leche o mermelada de frutas",
+      "categoria": "postre",
+      "pasos": "1- Colocamos en forma de corona la harina en un bol, incorporamos también el polvo de hornear y el azúcar.\n2- En el centro colocamos las yemas de huevo y la margarina, mezclamos muy bien hasta formar migas como granos de arroz.\n3- Añadimos leche para unir la masa y hacemos un bollo, lo dejamos descansar durante 30 minutos, tapado.\n4- Sobre una mesa enharinada extendemos la masa con el rodillo y cortamos círculos.\n5- Sobre una placa de horno colocamos los círculos de masa y los llevamos al horno suave.\n6- Retiramos del horno y dejamos enfriar.\n7- Luego tomamos un círculo de masa y le untamos dulce de leche o mermelada, colocamos otro círculo de masa encima.\n8- Disolvemos en agua caliente el azúcar y preparamos una jalea.\n9- Bañamos los alfajores con la jalea, dejamos enfriar y servimos.",
+      "imagen": "https://www.circuitogastronomico.com/wp-content/uploads/2021/03/alfajores.jpg",
+      "id": 7
     }
   ]
 }

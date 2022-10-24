@@ -16,6 +16,7 @@ const {
    setValue} = useForm({
     defaultValues: {
     nombreReceta: "",
+    resumen:"",
     dificultad: "",
     ingredientes:"",
     categoria: "",
@@ -31,6 +32,7 @@ const navegacion = useNavigate();
       if(respuesta.status===200){
         //cargar los datos de la repuesta en el formulario
         setValue('nombreReceta', respuesta.dato.nombreReceta)
+        setValue('resumen', respuesta.dato.resumen)
         setValue('dificultad', respuesta.dato.dificultad)
         setValue('ingredientes', respuesta.dato.ingredientes)
         setValue('categoria', respuesta.dato.categoria)
@@ -88,8 +90,29 @@ return (
        })} />
        <Form.Text className="text-danger">{errors.nombreReceta?.message}</Form.Text>
        </Form.Group>
-       
+      
+         <Form.Group className="mb-3" controlId="nuevoNombreReceta">
+        <Form.Label>Resumen</Form.Label>
+        <Form.Control 
+        type="text" 
+        as="textarea"
+        rows={5}
+        placeholder="Salpimentar, cortar en juliana..."
+        {...register('resumen', {
+          required:'Este dato es obligatorio', 
+          minLength: {
+            value: 2,
+            message: 'Debe ingresar como mínimo 2 caracteres'
+          },
+          maxLength:{
+            value: 500,
+            message: 'Debe ingresar como máximo 20000 caracteres'
+          }
+       })} />
+       <Form.Text className="text-danger">{errors.resumen?.message}</Form.Text>
+       </Form.Group>  
       <Form.Group className="mb-3">
+    
         <Form.Label>Dificultad</Form.Label>
         <Form.Select 
         {...register ('dificultad', {
@@ -105,10 +128,12 @@ return (
          <Form.Text className="text-danger">{errors.dificultad?.message}</Form.Text>
       </Form.Group>
        
-      <Form.Group className="mb-3" controlId="nuevoNombreReceta">
+        <Form.Group className="mb-3" controlId="nuevoNombreReceta">
         <Form.Label>Ingredientes</Form.Label>
         <Form.Control 
         type="text" 
+        as="textarea"
+        rows={5}
         placeholder="1 kg de carne, dos pimientos..."
         {...register('ingredientes', {
           required:'Este dato es obligatorio', 
@@ -117,8 +142,8 @@ return (
             message: 'Debe ingresar como mínimo 2 caracteres'
           },
           maxLength:{
-            value: 50,
-            message: 'Debe ingresar como máximo 200 caracteres'
+            value: 10000,
+            message: 'Debe ingresar como máximo 1000 caracteres'
           }
        })} />
        <Form.Text className="text-danger">{errors.ingredientes?.message}</Form.Text>
@@ -140,10 +165,12 @@ return (
          <Form.Text className="text-danger">{errors.categoria?.message}</Form.Text>
       </Form.Group>
        
-       <Form.Group className="mb-3" controlId="nuevoNombreReceta">
+      <Form.Group className="mb-3" controlId="nuevoNombreReceta">
         <Form.Label>Pasos</Form.Label>
         <Form.Control 
         type="text" 
+        as="textarea"
+        rows={5}
         placeholder="Salpimentar, cortar en juliana..."
         {...register('pasos', {
           required:'Este dato es obligatorio', 
@@ -152,8 +179,8 @@ return (
             message: 'Debe ingresar como mínimo 2 caracteres'
           },
           maxLength:{
-            value: 50,
-            message: 'Debe ingresar como máximo 1000 caracteres'
+            value: 20000,
+            message: 'Debe ingresar como máximo 20000 caracteres'
           }
        })} />
        <Form.Text className="text-danger">{errors.pasos?.message}</Form.Text>

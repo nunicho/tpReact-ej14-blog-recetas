@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,12 +12,12 @@ return (
       <Card.Img variant="top" src={receta.imagen} />
       <Card.Body>
         <Card.Title>{receta.nombreReceta}</Card.Title>
-        <Card.Text className="my-3">{receta.dificultad}</Card.Text>
-        <Card.Text className="my-3">{receta.categoria}</Card.Text>
-        <Card.Text className="my-3">{receta.ingredientes}</Card.Text>
-        <Card.Text className="my-3">{receta.pasos}</Card.Text>
-        <hr></hr>
-        <Button variant="danger">Ver más</Button>
+        <Card.Text className="my-3">Dificultad: {receta.dificultad}</Card.Text>
+        <Card.Text className="my-3"> Categoría: {receta.categoria}</Card.Text>
+        <Card.Text className="my-3">Ingredientes: {receta.ingredientes}</Card.Text>
+        <Card.Text className="my-3">{receta.resumen}</Card.Text>
+         <hr></hr>
+        <Link className="btn btn-danger text-center" to={`/DetalleReceta/${receta.id}`}>Ver más</Link>
       </Card.Body>
     </Card>
     
