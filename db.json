@@ -15,7 +15,7 @@
       "resumen": "Uno de los más deliciosos platos típicos de Córdoba que encuentras en cualquier lugar y de gran variedad son las empanadas cordobesas, hechas de carne molida, pimentón y una masa que te va a encantar.",
       "dificultad": "★★★★☆",
       "ingredientes": "Para la masa:\n• 400 gramos de harina 0000\n• 100 cc de salmuera\n• 50 gramos de grasa de cerdo\n• 1 cucharadita de pimentón\nPara el relleno:\n• 200 gramos de carne molida\n• 200 gramos de cebolla\n• 150 gramos de papas\n• 100 gramos de morrón rojo\n• 2 huevos\n• 20 gramos de aceitunas verdes\n• 30 gramos de pasas de uva\n• 2 cucharadas de azúcar\n• Ají molido\n• Sal",
-      "categoria": "plato-principal",
+      "categoria": "Plato principal",
       "pasos": "1 - Colocamos en un bol la harina, la grasa fundida y la salmuera. Amasamos hasta integrar todos los ingredientes, dejamos descansar la masa por 30 minutos y estiramos hasta obtener un espesor de 2 mm, cortamos en aros.\n2 - Salteamos el morrón con la cebolla y agregamos la carne y los condimentos. Cocinamos y añadimos finalmente las aceitunas, las pasas de uva y el azúcar. Reservamos el relleno.\n3 - Aparte colocamos en una olla agua y ponemos a hervir, incorporamos por 7 minutos las papas picaditas y las dejamos ablandar.\n4 - Añadimos a la mezcla de carne las papas y los huevos duros picados finamente.\n5 - Tomamos los aros de masa y rellenamos, llevamos las empanadas al horno hasta que se doren.",
       "imagen": "https://cocinerosargentinos.com/content/recipes/500x500/recipes.11938.jpeg",
       "id": 6
@@ -29,6 +29,46 @@
       "pasos": "1- Colocamos en forma de corona la harina en un bol, incorporamos también el polvo de hornear y el azúcar.\n2- En el centro colocamos las yemas de huevo y la margarina, mezclamos muy bien hasta formar migas como granos de arroz.\n3- Añadimos leche para unir la masa y hacemos un bollo, lo dejamos descansar durante 30 minutos, tapado.\n4- Sobre una mesa enharinada extendemos la masa con el rodillo y cortamos círculos.\n5- Sobre una placa de horno colocamos los círculos de masa y los llevamos al horno suave.\n6- Retiramos del horno y dejamos enfriar.\n7- Luego tomamos un círculo de masa y le untamos dulce de leche o mermelada, colocamos otro círculo de masa encima.\n8- Disolvemos en agua caliente el azúcar y preparamos una jalea.\n9- Bañamos los alfajores con la jalea, dejamos enfriar y servimos.",
       "imagen": "https://www.circuitogastronomico.com/wp-content/uploads/2021/03/alfajores.jpg",
       "id": 7
+    },
+    {
+      "nombreReceta": "Albóndigas a la cordobesa",
+      "resumen": "Y la carne no podía faltar en las comidas típicas de Córdoba, pues es uno de los ingredientes más utilizados en nuestra gastronomía y que es parte de nuestra cultura y tradición.",
+      "dificultad": "★★★☆☆",
+      "ingredientes": "• 1 kilo de carne molida\n• 2 cebollas\n• 3 cebollas de verdeo\n• 3 huevos\n• 1 morrón rojo\n• 3 ajos\n• 2 cucharadas de harina\n• Pimienta\n• Perejil\n• 2 cajas de puré de tomate\n• Sal",
+      "categoria": "Plato principal",
+      "pasos": "1- Colocamos la carne molida en un bol y agregamos los ajos y el perejil finamente picados.\n2- Incorporamos también los huevos, la harina y salpimentamos bien, mezclamos los ingredientes, para que se mezclen todos los sabores.\n3- Aparte preparamos la salsa, picamos el morrón y las cebollas y colocamos a sofreír, cuando veamos que la cebolla ya está transparente, agregamos 4- las cajas de puré de tomate. Salpimentamos y dejamos cocinando a fuego lento, apagamos y reservamos.\n5- Con la mezcla de carne hacemos las albóndigas, tratando en lo posible que todas queden del mismo tamaño y las incorporamos a la salsa.\n6- Colocamos nuevamente al fuego y dejamos cocinar por 10 minutos más.\n7- Servimos y acompañamos con arroz blanco o papas al vapor.",
+      "imagen": "https://lacomidatipica.com/wp-content/uploads/2019/05/Alb%C3%B3ndigas-cordobesas-.png",
+      "id": 8
+    },
+    {
+      "nombreReceta": "Lomito",
+      "resumen": "Hoy te traemos un plato exquisito, rápido, fácil de preparar y típicamente cordobés. Estamos hablando de EL LOMITO, un sándwich que es el deleite del paladar de much@s.",
+      "dificultad": "★★★☆☆",
+      "ingredientes": "• 2 bifes de lomo\n• 1 tomate\n• Hojas lechuga\n• 2 huevos\n• 4 fetas queso\n• 4 fetas jamón cocido\n• 2 pan para lomo\n• 2 papas\n• Mayonesa a gusto\n• Aceitunas para decorar",
+      "categoria": "Plato principal",
+      "pasos": "1- Desgrasa, tiernizar y salpimentar los bifes.\n2- Pelar y cortar las papas. Poner a freír en aceite caliente y cocinar 10 min aprox.\n3- Cortar el tomate en rodajas finas y la lechuga como para ensalada.\n4- Cocinar los huevos. Pueden ser fritos o tipo omelette.\n5- Cocinar los bifes en una plancha, vuelta y vuelta, sin que se sequen demasiado.\n6- Armado de cada lomito: Poner mayonesa en uno de los panes. Agregar el tomate en rodajas, la lechuga, el huevo cocinado, 2 fetas de queso, la carne, 2 fetas de jamón y el otro pan también con mayonesa.\n7- Decorar con una aceituna y servir acompañado de las papas .",
+      "imagen": "https://www.clarin.com/img/2021/07/19/hgA-CEG32_340x340__1.jpg",
+      "id": 9
+    },
+    {
+      "nombreReceta": "Criollitos cordobeses",
+      "resumen": "Por lejos, el mejor amigo y compañero del mate. Un clásico de las panaderías cordobesas: dame un cuarto de criollitos. Esta delicia viene en dos modalidades: común y de hojaldre. ",
+      "dificultad": "★★★★★",
+      "ingredientes": "• Harina 0000 1 kg\n• Sal 25 grs\n• Grasa bovina 300 grs\n• Levadura fresca 40 grs\n• Azúcar 1 cdita\nAgua C/N",
+      "categoria": "Desayuno",
+      "pasos": "1- Disolver la levadura con un poquito de agua y la cucharadita de azúcar.\n2- Tamizar la sal y la harina, agregar la levadura y la grasa liquida. Formar una masa incorporando la cantidad de agua que necesite.\n3- Dejar descansar por 40 minutos.\n4- Desgasificar la masa y estirar formando un rectángulo de medio centímetro, pincelar la mitad con grasa y doblar uniendo las dos partes. Estirar con 5- palote y reservar por 15 m.\n6- Volver a estirar la masa, pincelar con grasa y repetir  la operación 2 veces más.\n7- Se estira la masa de 3cm de espesor y se cortan cuadrados de 2x2, pinchar con tenedor.\n8- Y colocar en placa engrasada hasta que doblen su volumen.\n9- Cocinar a 180 º hasta que doren.\n10 - Al salir y en caliente se los pincela nuevamente con grasa.",
+      "imagen": "https://nuestracordoba.com.ar/wp-content/uploads/2018/09/criollitos-cordobeses.jpg",
+      "id": 10
+    },
+    {
+      "nombreReceta": "Un mate medio burro",
+      "resumen": "El burro es uno de los yuyitos que no puede faltar en un mate bien cordobés. Es una hierba serrana que nace en medio de los montes. Es nuestra infusión sagrada, el condimento esencial para un buen mate. El burro es la esencia de la tonada cordobesa. Es el protagonista, junto con la peperina, de los montes cordobeses.",
+      "dificultad": "★☆☆☆☆",
+      "ingredientes": "• Burro (también conocido como Burrito)\n• Yerba\n• Azúcar (para los que lo prefieren dulce)\n• Y un buen mate",
+      "categoria": "Aperitivo",
+      "pasos": "Para tomarse “unos verdes” con burro, es necesario tener una yerba preferentemente suave y un par de hojas de esta hierba esencial. ¡Y listo!\n\nEl burro es uno de los yuyitos que no puede faltar en un mate bien cordobés. Es una hierba serrana que nace en medio de los montes. Es nuestra infusión sagrada, el condimento esencial para un buen mate. El burro es la esencia de la tonada cordobesa. Es el protagonista, junto con la peperina, de los montes cordobeses.\n\nSu nombre científico es Aloysia polystachya. Es de color verde oscuro y sus hojitas cuentan con 4 a 8 centímetros de largo. También se encuentra en otras provincias de la Argentina. Catamarca, Corrientes, San Juan, La Rioja, San Luis, Santiago del Estero, Salta y Jujuy son algunas de las tierras donde podemos encontrar al famoso “burrito”. Esta planta aromática se utiliza también en la región oriental del Paraguay.",
+      "imagen": "https://www.mendozapost.com/files/image/413/413567/631b4ac9c235c_570_320!.jpg?s=f81712f1b30045338c227e3ef56caa3b&d=1662733006",
+      "id": 11
     }
   ]
 }

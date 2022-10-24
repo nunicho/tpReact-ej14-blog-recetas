@@ -156,11 +156,11 @@ return (
           required:'Debe seleccionar una categoria'
         })}>
            <option value="">Seleccione una opcion</option>
-            <option value="desayuno">Desayuno</option>
-            <option value="plato-principal">Plato Principal</option>
-            <option value="postre">Postre</option>
-            <option value="ensalada">Ensalada</option>
-            <option value="aperitivo">Aperitivo</option>
+            <option value="Desayuno">Desayuno</option>
+            <option value="Plato principal">Plato Principal</option>
+            <option value="Postre">Postre</option>
+            <option value="Ensalada">Ensalada</option>
+            <option value="Aperitivo">Aperitivo</option>
         </Form.Select>
          <Form.Text className="text-danger">{errors.categoria?.message}</Form.Text>
       </Form.Group>
