@@ -5,6 +5,7 @@ import Badge from 'react-bootstrap/Badge';
 import {useParams} from "react-router-dom"
 import { obtenerRecetaAPI } from '../helpers/queries';
 import Swal from "sweetalert2";
+import Spinner from '../common/Spinner';
 
 
 function DetalleReceta() {
@@ -16,11 +17,15 @@ const [categoria, setCategoria] = useState ();
 const [pasos, setPasos] = useState ();
 const [imagen, setImagen] = useState ();
 
+//Spinner
+const [mostrarSpinner, setMostrarSpinner] = useState(false)
+
 // traer el parámetro de la ruta
 const {id} = useParams();
 
 
 useEffect(()=>{
+    setMostrarSpinner(true);
     obtenerRecetaAPI(id).then((respuesta)=>{
       if(respuesta.status===200){
         setNombreReceta(respuesta.dato.nombreReceta)
@@ -29,18 +34,14 @@ useEffect(()=>{
         setCategoria(respuesta.dato.categoria)
         setPasos(respuesta.dato.pasos)
         setImagen(respuesta.dato.imagen)
+        setMostrarSpinner(false);
       }else{
       Swal.fire('Ocurrio un error', 'Intente este paso en unos minutos', 'error')
       }
     })
   },[])
 
-
-
-
-  return (
-    <div className="container">
-    <Card className="d-md-flex flex-md-row">
+const mostrarComponente = (mostrarSpinner === true) ? (<Spinner></Spinner>):(<Card className="d-md-flex flex-md-row">
       <Card.Img variant="top" src={imagen} />
       <Card.Body>
         <Card.Title>{nombreReceta}</Card.Title>
@@ -60,7 +61,12 @@ useEffect(()=>{
         {pasos}
         </Card.Text>
        </Card.Body>
-    </Card>
+    </Card>)
+
+
+  return (
+    <div className="container">
+    {mostrarComponente}
     </div>
   );
 }
