@@ -34,7 +34,7 @@ return (
              <h2>Recetas Disponibles</h2>
             <Link className="btn btn-primary" to="/administrar/crear">Agregar</Link>            
         </div>
-    <Table striped bordered hover>          
+    <Table className="tablaAdministrador" responsive striped bordered>          
       <thead>                
         <tr className="fila">
           <th>Cod</th>

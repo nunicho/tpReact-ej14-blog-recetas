@@ -9,7 +9,7 @@ import '../../../App.css'
 const ItemReceta = ({receta, setRecetas}) => {
 const borrarReceta = () =>{
 Swal.fire({
-  title: '¿Estás seguro? de eliminar la receta',
+  title: '¿Estás seguro de eliminar la receta?',
   text: "No se puede revertir este paso",
   icon: 'warning',
   showCancelButton: true,
@@ -27,7 +27,7 @@ Swal.fire({
         setRecetas(respuesta)
       })
       Swal.fire(
-      'Receta borrada!',
+      '¡Receta borrada!',
       'La receta fue correctamente borrada',
       'success'
     )
