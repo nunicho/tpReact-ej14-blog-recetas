@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import {borrarRecetaAPI, consultarAPI } from '../../helpers/queries';
 import { Link } from 'react-router-dom';
+import '../../../App.css'
 
 const ItemReceta = ({receta, setRecetas}) => {
 const borrarReceta = () =>{
@@ -45,13 +46,13 @@ Swal.fire({
   
   return (
         <tr>
-          <td>{receta.id}</td>
-          <td>{receta.nombreReceta}</td>
-          <td>{receta.dificultad}</td>
-          <td>{receta.categoria}</td>
-          <td>{receta.ingredientes}</td>
-          <td>{receta.pasos}</td>
-          <td>{receta.imagen}</td>
+          <td className="overflow">{receta.id}</td>
+          <td className="overflow tdNombre">{receta.nombreReceta}</td>
+          <td className="overflow">{receta.dificultad}</td>
+          <td className="overflow">{receta.categoria}</td>
+          <td className="overflow">{receta.ingredientes}</td>
+          <td className="overflow">{receta.pasos}</td>
+          <td className="overflow tdImagen">{receta.imagen}</td>
           <td>
             <Link className="btn btn-warning" to={`/administrar/editar/${receta.id}`}>Editar</Link>
             <Button variant="danger" onClick={borrarReceta}>Borrar</Button>

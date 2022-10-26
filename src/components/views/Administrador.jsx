@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import { consultarAPI } from '../helpers/queries';
 import ItemReceta from './Receta/ItemReceta';
 import {Link} from 'react-router-dom';
+import '../../App.css'
 
 const Administrador = () => {
 const [recetas, setRecetas]=useState([])
@@ -28,14 +29,14 @@ setRecetas(respuesta)
 },[])
 
 return (
-    <div className="container">
+    <div className="container ">
         <div className="d-flex justify-content-between my-3">
-            <h2>Recetas Disponibles</h2>
+             <h2>Recetas Disponibles</h2>
             <Link className="btn btn-primary" to="/administrar/crear">Agregar</Link>            
         </div>
     <Table striped bordered hover>          
       <thead>                
-        <tr>
+        <tr className="fila">
           <th>Cod</th>
           <th>Nombre</th>
           <th>Dificultad</th>
@@ -43,6 +44,7 @@ return (
           <th>Ingredientes</th>
           <th>Pasos</th>
           <th>URL de la Imagen</th>
+          <th>Acción</th>
         </tr>
       </thead>
       <tbody>

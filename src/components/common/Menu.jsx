@@ -4,12 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link, NavLink} from 'react-router-dom'
+import '../../App.css'
 
 
 const Menu = () => {
     return (
  
-    <Navbar bg="success" variant="dark" expand="lg">
+    <Navbar bg="success" variant="dark" expand="lg" className="container-fluid">
       <Container>
         <Navbar.Brand as={Link} to="/">
           Recetas

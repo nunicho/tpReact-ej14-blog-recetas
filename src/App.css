@@ -1,0 +1,37 @@
+
+.fila:nth-child(even){
+    background-color: #f2f2f2;
+    }
+    
+tr{
+    vertical-align: baseline;
+    }
+
+td{
+    font-size: small;
+}
+
+
+
+.overflow
+    {
+    max-width: 0;
+    overflow: hidden;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
+.overflow:hover{
+    max-height:unset;
+    overflow:visible;
+    text-overflow:unset;
+    white-space: initial; 
+         
+    }
+.tdImagen{
+    font-size: smaller;
+}
+.tdNombre{
+    font-weight: bold;
+}
+

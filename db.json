@@ -5,7 +5,7 @@
       "resumen": "Un clásico argentino y que cuenta con una de los nombres de comidas típicas de Córdoba que mejor identifican su tierra, es el fernet con coca. Una bebida que disfrutan propios y extraños, sin dudar.",
       "dificultad": "★☆☆☆☆",
       "ingredientes": "• Fernet branca\n• Hielo\n• Coca cola",
-      "categoria": "aperitivo",
+      "categoria": "Aperitivo",
       "pasos": "Preparación:\n\n1- En un vaso colocamos una parte de coca cola.\n2- Añadimos lentamente 2 partes de fernet\n3- Agregamos hielo.\n4- Revolvemos y en tan solo un momento, obtenemos una deliciosa y refrescante bebida.",
       "imagen": "https://www.receteca.com/imagenes/recetas/3761.jpg",
       "id": 5
@@ -25,7 +25,7 @@
       "resumen": "Recetas de platos típicos de Córdoba existe gran variedad, pero los alfajores son de esas preparaciones más emblemáticas, deliciosas y que son un gran orgullo de nuestra gastronomía.",
       "dificultad": "★★★★☆",
       "ingredientes": "• 300 gramos de harina\n• 2 yemas de huevo\n• 1 cucharadita de levadura en polvo\n• 150 gramos de margarina\n• 1 taza de azúcar glass\n• 1 cucharada de azúcar\n• Dulce de leche o mermelada de frutas",
-      "categoria": "postre",
+      "categoria": "Postre",
       "pasos": "1- Colocamos en forma de corona la harina en un bol, incorporamos también el polvo de hornear y el azúcar.\n2- En el centro colocamos las yemas de huevo y la margarina, mezclamos muy bien hasta formar migas como granos de arroz.\n3- Añadimos leche para unir la masa y hacemos un bollo, lo dejamos descansar durante 30 minutos, tapado.\n4- Sobre una mesa enharinada extendemos la masa con el rodillo y cortamos círculos.\n5- Sobre una placa de horno colocamos los círculos de masa y los llevamos al horno suave.\n6- Retiramos del horno y dejamos enfriar.\n7- Luego tomamos un círculo de masa y le untamos dulce de leche o mermelada, colocamos otro círculo de masa encima.\n8- Disolvemos en agua caliente el azúcar y preparamos una jalea.\n9- Bañamos los alfajores con la jalea, dejamos enfriar y servimos.",
       "imagen": "https://www.rebanando.com/media/alfajores_cordobeses_crop.jpg/rh/alfajores-cordobeses.jpg",
       "id": 7
@@ -55,7 +55,7 @@
       "resumen": "Por lejos, el mejor amigo y compañero del mate. Un clásico de las panaderías cordobesas: dame un cuarto de criollitos. Esta delicia viene en dos modalidades: común y de hojaldre. ",
       "dificultad": "★★★★★",
       "ingredientes": "• Harina 0000 1 kg\n• Sal 25 grs\n• Grasa bovina 300 grs\n• Levadura fresca 40 grs\n• Azúcar 1 cdita\nAgua C/N",
-      "categoria": "Desayuno",
+      "categoria": "Desayuno/Merienda",
       "pasos": "1- Disolver la levadura con un poquito de agua y la cucharadita de azúcar.\n2- Tamizar la sal y la harina, agregar la levadura y la grasa liquida. Formar una masa incorporando la cantidad de agua que necesite.\n3- Dejar descansar por 40 minutos.\n4- Desgasificar la masa y estirar formando un rectángulo de medio centímetro, pincelar la mitad con grasa y doblar uniendo las dos partes. Estirar con 5- palote y reservar por 15 m.\n6- Volver a estirar la masa, pincelar con grasa y repetir  la operación 2 veces más.\n7- Se estira la masa de 3cm de espesor y se cortan cuadrados de 2x2, pinchar con tenedor.\n8- Y colocar en placa engrasada hasta que doblen su volumen.\n9- Cocinar a 180 º hasta que doren.\n10 - Al salir y en caliente se los pincela nuevamente con grasa.",
       "imagen": "https://i1.wp.com/recetasargentinas.net/wp-content/uploads/2013/12/criollitos-copy.jpg?fit=500%2C423",
       "id": 10
@@ -89,6 +89,16 @@
       "pasos": "La Real Academia Española aceptó esta bebida pero la definió de otra manera: uniendo dos términos que la caracterizan.\n“Tinto de verano”, es el nuevo término entre los 3.836 que fueron incorporados al Diccionario de la Lengua Española. Fue descripto como: “Bebida que se compone de vino tinto y gaseosa o refresco de limón”. Este combinado, también conocido como sangría –aunque con su agregado de frutas cortadas-, es el cóctel perfecto para sofocar el calor.\nSu receta es muy fácil: dos partes de Pritty y una de vino tinto. Se le agrega con mucho hielo. Eso sí, debe ser servido en una botella plástica cortada (o en su defecto en una jarra de acero inoxidable). Ideal para beberlo en una calurosa tarde a la vera del río. Se lo acompaña con un cuartetazo.",
       "imagen": "https://www.circuitogastronomico.com/wp-content/uploads/2019/12/prittiau.jpg",
       "id": 13
+    },
+    {
+      "nombreReceta": "Pastelitos de membrillo (o batata)",
+      "resumen": "El clásico de los balnearios córdobeses, el compañero infaltable del mate serrano. ¡Paaaaaastelitooooooooooos! Imposible resistirse a su masa frita y almibarada.",
+      "dificultad": "★★☆☆☆",
+      "ingredientes": "Masa:\n• Harina 0000 500 grs\n• Manteca 80 grs\n• Sal 1 pizca\n• Huevos 2\n• Jugo de limón 1 cdta\n• Margarina c/n\n• Almidón de maíz c/n\nRelleno:\n• Dulce de membrillo\n• Dulce de batata\nAlmíbar:\n• Agua 500 cc\n• Azúcar 300 grs",
+      "categoria": "Desayuno/Merienda",
+      "pasos": "1 - Para la masa colocar en un boul la harina, la manteca, los huevos, sal y la leche. Mezclar todo y amasar hasta llevarla a un punto arenoso. Envolver en un film y dejar reposar unos minutos.\n2 - Para el  hojaldrado, estirar la masa con palote y doblar al medio. Estirar nuevamente y doblar al medio para volver a estirar. Dejar reposar nuevamente y volver a estirar, doblar, estirar y doblar nuevamente.\n3 - Para el armado, cortar cuadrados de la misma medida. Colocar la base en la mesada, agregarle relleno y tapar con otro cuadrado pero formando una estrella de 8 puntas. Tomarlo con los dedos índice y pulgar de cada mano y cerrar para dar la forma de pastelito.\n4- Para freír, calentar el aceite y freír hasta obtener el dorado deseado.",
+      "imagen": "https://cocinerosargentinos.com/content/recipes/500x500/pastelitos-dulces-de-verano-relax.763.jpg",
+      "id": 14
     }
   ]
 }

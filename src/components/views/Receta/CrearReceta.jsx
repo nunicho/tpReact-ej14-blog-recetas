@@ -136,7 +136,7 @@ return (
           required:'Debe seleccionar una categoria'
         })}>
            <option value="">Seleccione una opcion</option>
-            <option value="Desayuno">Desayuno</option>
+            <option value="Desayuno/Merienda">Desayuno/Merienda</option>
             <option value="Plato principal">Plato Principal</option>
             <option value="Postre">Postre</option>
             <option value="Ensalada">Ensalada</option>
