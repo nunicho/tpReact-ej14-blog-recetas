@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import { creaRecetaAPI } from "../../helpers/queries";
 import { useNavigate} from "react-router-dom"
-import { LionTextarea } from '@lion/textarea';
+
 
 const CrearReceta = () => {
 
@@ -99,11 +99,11 @@ return (
           required:'Debe seleccionar una dificultad'
         })}>
            <option value="">Seleccione una opcion</option>
-            <option value="&#9733;&#9734;&#9734;&#9734;&#9734;">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9734;&#9734;&#9734;">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9734;&#9734;">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9733;&#9734;">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            <option value="muy facil">Muy fácil</option>
+            <option value="facil">Fácil</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="dificil">Difícil</option>
+            <option value="experto">Experto</option>
         </Form.Select>
          <Form.Text className="text-danger">{errors.dificultad?.message}</Form.Text>
       </Form.Group>
@@ -187,3 +187,18 @@ return (
 }
 
 export default CrearReceta;
+
+
+/*
+        <Form.Select 
+        {...register ('dificultad', {
+          required:'Debe seleccionar una dificultad'
+        })}>
+           <option value="">Seleccione una opcion</option>
+            <option value="&#9733;&#9734;&#9734;&#9734;&#9734;">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9734;&#9734;&#9734;">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9734;&#9734;">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9734;">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+        </Form.Select>
+*/

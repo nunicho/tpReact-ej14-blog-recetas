@@ -20,7 +20,7 @@ Swal.fire({
 }).then((result) => {
   if (result.isConfirmed) {
     //realizar la consulta a la API
-    borrarRecetaAPI(receta.id).then((respuesta)=>{
+    borrarRecetaAPI(receta._id).then((respuesta)=>{
       if(respuesta.status === 200){
         consultarAPI().then((respuesta)=>{
         console.log(respuesta)
@@ -46,7 +46,7 @@ Swal.fire({
   
   return (
         <tr>
-          <td className="overflow">{receta.id}</td>
+          <td className="overflow">{receta._id}</td>
           <td className="overflow tdNombre">{receta.nombreReceta}</td>
           <td className="overflow">{receta.dificultad}</td>
           <td className="overflow">{receta.categoria}</td>
@@ -54,7 +54,7 @@ Swal.fire({
           <td className="overflow">{receta.pasos}</td>
           <td className="overflow tdImagen">{receta.imagen}</td>
           <td>
-            <Link className="btn btn-warning" to={`/administrar/editar/${receta.id}`}>Editar</Link>
+            <Link className="btn btn-warning" to={`/administrar/editar/${receta._id}`}>Editar</Link>
             <Button variant="danger" onClick={borrarReceta}>Borrar</Button>
           </td>
         </tr>

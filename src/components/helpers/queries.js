@@ -1,6 +1,6 @@
 // archivo que nos sirva para hacer las consultas a la API (json-server)
 
-const URL = 'http://localhost:3004/recetas';
+const URL = 'http://localhost:4006/apirecetas/recetas';
 // tipos de peticiones 
 // petición GET que trae todos los productos o un producto  
 // petición POST, crear un producto, login 
@@ -77,5 +77,68 @@ export const editarRecetaAPI = async(id, datosActualizados)=>{
         return respuesta;
     }catch(error){
         console.log(error);
+    }
+}
+
+const URLusuarios = 'http://localhost:4006/apirecetas/usuarios';
+// tipos de peticiones 
+// petición GET que trae todos los usuarios o un usuario  
+// petición POST, crear un usuario, login 
+// petición DELETE, petición para borrar
+// petición PUT, petición que pide modificar un usuario
+
+
+// petición GET que trae todos los productos
+export const consultarUsuarioAPI = async(data) =>{
+    try{
+
+        const respuestaUsuarios = await fetch (URLusuarios);
+        const listaUsuarios = await respuestaUsuarios.json();
+        // console.log(listaProductos)
+        return listaUsuarios
+    }catch(error){
+        console.log(error)
+    }
+}
+
+export const creaUsuarioAPI = async(usuario) =>{
+    try{
+        const respuestaUsuarios = await fetch (URLusuarios, {
+            method: "POST", 
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(usuario)
+        });
+        return respuestaUsuarios;
+    }catch(error){
+        console.log(error)
+    }
+}
+
+export const borrarUsuarioAPI = async(id) =>{
+    try{
+        const respuestaUsuarios = await fetch (`${URLusuarios}/${id}`, {
+            method: "DELETE", 
+         
+        });
+        return respuestaUsuarios;
+    }catch(error){
+        console.log(error)
+    }
+}
+
+
+export const obtenerUsuarioAPI = async(mail) =>{
+    try{
+
+        const respuestaUsuarios = await fetch (URLusuarios+'/');
+        const usuarioBuscado = {
+        dato: await respuestaUsuarios.json(),
+        status: respuestaUsuarios.status
+        }
+        return usuarioBuscado
+    }catch(error){
+        console.log(error)
     }
 }

@@ -119,11 +119,11 @@ return (
           required:'Debe seleccionar una dificultad'
         })}>
            <option value="">Seleccione una opcion</option>
-            <option value="&#9733;&#9734;&#9734;&#9734;&#9734;">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9734;&#9734;&#9734;">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9734;&#9734;">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9733;&#9734;">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
-            <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            <option value="muy facil">Muy fácil</option>
+            <option value="facil">Fácil</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="dificil">Difícil</option>
+            <option value="experto">Experto</option>
         </Form.Select>
          <Form.Text className="text-danger">{errors.dificultad?.message}</Form.Text>
       </Form.Group>
@@ -207,3 +207,18 @@ return (
 }
 
 export default EditarReceta;
+
+/*
+        <Form.Select 
+        {...register ('dificultad', {
+          required:'Debe seleccionar una dificultad'
+        })}>
+           <option value="">Seleccione una opcion</option>
+            <option value="&#9733;&#9734;&#9734;&#9734;&#9734;">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9734;&#9734;&#9734;">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9734;&#9734;">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9734;">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+            <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+        </Form.Select>
+
+*/

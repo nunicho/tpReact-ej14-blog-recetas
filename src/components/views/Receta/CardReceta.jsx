@@ -19,7 +19,7 @@ return (
         <Card.Text className="my-3"><span className="fw-bold">Resumen: </span>{receta.resumen}</Card.Text>
          <hr></hr>
         <div className="text-center">
-        <Link className="btn btn-danger " to={`/DetalleReceta/${receta.id}`}>Ver más</Link>
+        <Link className="btn btn-danger " to={`/DetalleReceta/${receta._id}`}>Ver más</Link>
        </div>
       </Card.Body>
     </Card>

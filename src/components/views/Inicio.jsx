@@ -22,7 +22,7 @@ setMostrarSpinner(false);
 },[])
 
 const mostrarComponente = (mostrarSpinner === true) ? (<Spinner></Spinner>):(
-             recetas.map((receta)=> <CardReceta key={receta.id} receta={receta} setRecetas={setRecetas}></CardReceta> )
+             recetas.map((receta)=> <CardReceta key={receta._id} receta={receta} setRecetas={setRecetas}></CardReceta> )
         )
 
     return (

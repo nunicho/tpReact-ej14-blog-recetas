@@ -10,6 +10,8 @@ import DetalleReceta from './components/views/DetalleReceta'
 import ItemReceta from './components/views/Receta/ItemReceta'
 import CrearReceta from './components/views/Receta/CrearReceta'
 import EditarReceta from './components/views/Receta/EditarReceta'
+import Login from './components/views/Login'
+import Registrar from './components/views/Registrar'
 
 
 
@@ -28,6 +30,8 @@ function App() {
     <Route exact path='/ItemReceta' element={<ItemReceta></ItemReceta>}></Route>
     <Route exact path='/administrar/crear' element={<CrearReceta></CrearReceta>}></Route>
     <Route exact path='/administrar/editar/:id' element={<EditarReceta></EditarReceta>}></Route>
+    <Route exact path='/login' element={<Login></Login>}></Route>
+    <Route exact path='/registrar' element={<Registrar></Registrar>}></Route>
     <Route  path='*' element={<Error404></Error404>}></Route>
   </Routes>
  <Footer></Footer>
