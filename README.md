@@ -2,6 +2,8 @@
 
 # Comisión 6i - Rolling School
 
+## 6. Blog de recetas (con frontend)
+Unir el proyecto de backend desarrollado en el punto anterior, con el blog derecetas realizado en el módulo de react, agregar además el login y registro de usuario para poder interactuar con los endpoints creados en el punto anterior.
 
 ## 14. Blog de recetas 
 Unir el proyecto de backend desarrollado en el punto anterior, con el blog de

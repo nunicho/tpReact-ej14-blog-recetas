@@ -43,7 +43,7 @@ Swal.fire({
 })
 
   } 
-  
+    
   return (
         <tr>
           <td className="overflow">{receta._id}</td>
