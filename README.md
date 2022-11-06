@@ -4,7 +4,9 @@
 
 
 ## 14. Blog de recetas 
-Crea una aplicación web, que permita mostrar un blog de recetas de cocina en una página, desde otra pagina debo poder agregar, modificar o quitar las recetas y estas deben estar almacenadas en el localstorage.
+Unir el proyecto de backend desarrollado en el punto anterior, con el blog de
+recetas realizado en el módulo de react, agregar además el login y registro de
+usuario para poder interactuar con los endpoints creados en el punto anterior.
 
 ## Extensiones de React utilizadas
 
