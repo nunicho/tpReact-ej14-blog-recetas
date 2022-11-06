@@ -137,13 +137,14 @@ const onSubmit = (datos) =>{
         })}
         
          />
-         <button onClick={togglePassword}>Ver contraseña</button>
+       
         <Form.Text className="text-danger">{errors.password?.message}</Form.Text>
        </Form.Group>               
       <Button variant="primary" type="submit">
        Enviar
-      </Button>
+      </Button>      
     </Form>
+    <Button className="my-2" variant="success" onClick={togglePassword}>Ver contraseña</Button>
     </div>
   );
 }
