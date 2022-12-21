@@ -1,6 +1,6 @@
 // archivo que nos sirva para hacer las consultas a la API (json-server)
 
-const URL = 'http://localhost:4006/apirecetas/recetas';
+const URL = process.env.REACT_APP_API_ONLINE_RECETAS;
 // tipos de peticiones 
 // petición GET que trae todos los productos o un producto  
 // petición POST, crear un producto, login 
@@ -80,7 +80,7 @@ export const editarRecetaAPI = async(id, datosActualizados)=>{
     }
 }
 
-const URLusuarios = 'http://localhost:4006/apirecetas/usuarios';
+const URLusuarios = process.env.REACT_APP_API_ONLINE_USUARIOS;
 // tipos de peticiones 
 // petición GET que trae todos los usuarios o un usuario  
 // petición POST, crear un usuario, login 
